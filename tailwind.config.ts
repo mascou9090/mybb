@@ -13,6 +13,16 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      animation: {
+        "hidden-img": "hiddenImg 0.8s ease"
+      },
+      keyframes: {
+        hiddenImg: {
+          "0%": {transform: "translateX(-10px)", opacity: "0"},
+          "100%": {transform: "translateX(0px)", opacity: "1"}
+        },
+        
+      },
     },
   },
   plugins: [],
